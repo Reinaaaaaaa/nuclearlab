@@ -157,7 +157,7 @@
       <div class="bg-white rounded-xl border border-slate-200 h-64 overflow-hidden relative shadow-inner">
         <canvas id="fissionCanvas" width="800" height="256" class="w-full h-full"></canvas>
         <div class="absolute bottom-2 left-4 text-xs text-slate-500 font-medium">
-          Inti $^{235}\text{U}$ Terbelah: <b id="fissionCountText" class="text-teal-700 text-sm">0</b> / 40
+          Inti ${}^{235}\text{U}$ Terbelah: <b id="fissionCountText" class="text-teal-700 text-sm">0</b> / 40
         </div>
       </div>
     </div>
@@ -166,17 +166,17 @@
     <div class="bg-gradient-to-r from-teal-50 via-white to-cyan-50 p-6 md:p-8 rounded-2xl border border-teal-200 shadow-sm">
       <div class="flex items-center gap-2 mb-2">
         <span class="text-lg">🦴</span>
-        <h3 class="text-xl font-bold text-slate-900">Aplikasi Nyata: Kalkulator Penanggalan Radiokarbon ($^{14}\text{C}$)</h3>
+        <h3 class="text-xl font-bold text-slate-900">Aplikasi Nyata: Kalkulator Penanggalan Radiokarbon (${}^{14}\text{C}$)</h3>
       </div>
       <p class="text-sm text-slate-600 max-w-3xl mb-6">
-        Karbon-14 meluruh dengan waktu paruh $T_{1/2} = 5730\text{ tahun}$. Dengan mengukur persentase sisa $^{14}\text{C}$ pada fosil atau kayu purbakala, arkeolog dapat menentukan umur benda sejarah tersebut:
+        Karbon-14 meluruh dengan waktu paruh $T_{1/2} = 5730\text{ tahun}$. Dengan mengukur persentase sisa ${}^{14}\text{C}$ pada fosil atau kayu purbakala, arkeolog dapat menentukan umur benda sejarah tersebut:
         $$t = -\frac{T_{1/2}}{\ln 2} \ln\left(\frac{N}{N_0}\right)$$
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
         <div class="md:col-span-7 space-y-3">
           <div class="flex justify-between text-sm font-semibold">
-            <span class="text-slate-800">Persentase Sisa $^{14}\text{C}$ pada Fosil:</span>
+            <span class="text-slate-800">Persentase Sisa ${}^{14}\text{C}$ pada Fosil:</span>
             <span id="c14SliderVal" class="text-teal-700 font-bold text-base">50%</span>
           </div>
           <input type="range" id="c14Slider" min="1" max="100" value="50" oninput="updateC14Calc()" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-teal-600">
